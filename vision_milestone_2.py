@@ -15,7 +15,7 @@ contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPL
 
 # Load the template images for digits
 templates = []
-for i in range(10):
+for i in range(1, 33402):
     template = cv2.imread(f"train/{i}.png", cv2.IMREAD_GRAYSCALE)
     templates.append(template)
 
